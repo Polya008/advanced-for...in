@@ -8,7 +8,8 @@ test('Sorting object properties', () => {
     attack: 80,
     defence: 40,
   };
-  const received = orderByProps(obj, ['name', 'level']);
+ const result = orderByProps(obj, ['name', 'level']);
+ 
   const expected = [
     { key: 'name', value: 'мечник' },
     { key: 'level', value: 2 },
@@ -16,5 +17,6 @@ test('Sorting object properties', () => {
     { key: 'defence', value: 40 },
     { key: 'health', value: 10 },
   ];
-  expect(received).toEqual(expected);
+
+  expect(expected).toEqual(result);
 });

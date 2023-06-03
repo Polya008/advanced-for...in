@@ -1,2 +1,3 @@
 
-const orderByProps = require('src/orderByProps')
+import orderByProps from '../orderByProps';
+
