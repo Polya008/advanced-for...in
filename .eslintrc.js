@@ -1,9 +1,9 @@
-{
+module.exports = {
     "env": {
         "browser": true,
         "es2021": true,
-        "jest": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
@@ -15,11 +15,9 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
-    "no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
-    ]
-  }
+    }
 }
