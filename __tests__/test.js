@@ -18,5 +18,5 @@ test('Sorting object properties', () => {
     { key: 'health', value: 10 },
   ];
 
-  expect(expected).toEqual(result);
+  expect(result).toEqual(expected);
 });
